@@ -36,26 +36,7 @@
             <name>Rest</name>
         </work-item-handler>
     </work-item-handlers>
-    <environment-entries>
-        <environment-entry>
-            <resolver>mvel</resolver>
-            <identifier>https://argoqa.minenergia.gov.co/orfeo/restapi</identifier>
-            <parameters/>
-            <name>orfeoBaseUrl</name>
-        </environment-entry>
-        <environment-entry>
-            <resolver>mvel</resolver>
-            <identifier>orfeo@123</identifier>
-            <parameters/>
-            <name>orfeoJbpmPassword</name>
-        </environment-entry>
-        <environment-entry>
-            <resolver>mvel</resolver>
-            <identifier>ADMON</identifier>
-            <parameters/>
-            <name>orfeoJbpmUser</name>
-        </environment-entry>
-    </environment-entries>
+    <environment-entries/>
     <configurations/>
     <required-roles/>
     <remoteable-classes/>
