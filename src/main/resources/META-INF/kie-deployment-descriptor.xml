@@ -11,19 +11,19 @@
     <globals>
         <global>
             <resolver>mvel</resolver>
-            <identifier>https://argoqa.minenergia.gov.co/orfeo/restapi</identifier>
+            <identifier>"https://argoqa.minenergia.gov.co/orfeo/restapi"</identifier>
             <parameters/>
             <name>orfeoBaseUrl</name>
         </global>
         <global>
             <resolver>mvel</resolver>
-            <identifier>orfeo@123</identifier>
+            <identifier>"orfeo@123"</identifier>
             <parameters/>
             <name>orfeoJbpmPassword</name>
         </global>
         <global>
             <resolver>mvel</resolver>
-            <identifier>ADMON</identifier>
+            <identifier>"ADMON"</identifier>
             <parameters/>
             <name>orfeoJbpmUser</name>
         </global>
