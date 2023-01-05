@@ -2,11 +2,11 @@
 <project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>gov.co.mineneriga.jbpm.orfeo</groupId>
-  <artifactId>orfeo_tests</artifactId>
+  <groupId>co.gov.mineneriga.jbpm.orfeo</groupId>
+  <artifactId>orfeo_integrations</artifactId>
   <version>1.0.0-SNAPSHOT</version>
   <packaging>kjar</packaging>
-  <name>orfeo_tests</name>
+  <name>orfeo_integrations</name>
   <description></description>
   <dependencies>
     <dependency>
