@@ -25,7 +25,7 @@
             <name>orfeoBaseUrl</name>
         </environment-entry>
         <environment-entry>
-            <resolver>reflection</resolver>
+            <resolver>mvel</resolver>
             <identifier>orfeo@123</identifier>
             <parameters/>
             <name>orfeoJbpmPassword</name>
