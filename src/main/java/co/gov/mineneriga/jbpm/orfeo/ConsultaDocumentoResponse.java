@@ -6,12 +6,62 @@ package co.gov.mineneriga.jbpm.orfeo;
 
 public class ConsultaDocumentoResponse implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public ConsultaDocumentoResponse() {
-    }
+	@org.kie.api.definition.type.Label(value = "responseCode")
+	private java.lang.Integer responseCode;
+	@org.kie.api.definition.type.Label(value = "responseMessage")
+	private java.lang.String responseMessage;
+	@org.kie.api.definition.type.Label(value = "Expediente")
+	private java.lang.String expediente;
+	@org.kie.api.definition.type.Label(value = "documentos")
+	private java.util.List<co.gov.mineneriga.jbpm.orfeo.OrfeoDocument> documentos;
 
+	public ConsultaDocumentoResponse() {
+	}
 
+	public java.lang.Integer getResponseCode() {
+		return this.responseCode;
+	}
 
+	public void setResponseCode(java.lang.Integer responseCode) {
+		this.responseCode = responseCode;
+	}
+
+	public java.lang.String getResponseMessage() {
+		return this.responseMessage;
+	}
+
+	public void setResponseMessage(java.lang.String responseMessage) {
+		this.responseMessage = responseMessage;
+	}
+
+	public java.lang.String getExpediente() {
+		return this.expediente;
+	}
+
+	public void setExpediente(java.lang.String expediente) {
+		this.expediente = expediente;
+	}
+
+	public java.util.List<co.gov.mineneriga.jbpm.orfeo.OrfeoDocument> getDocumentos() {
+		return this.documentos;
+	}
+
+	public void setDocumentos(
+			java.util.List<co.gov.mineneriga.jbpm.orfeo.OrfeoDocument> documentos) {
+		this.documentos = documentos;
+	}
+
+	public ConsultaDocumentoResponse(
+			java.lang.Integer responseCode,
+			java.lang.String responseMessage,
+			java.lang.String expediente,
+			java.util.List<co.gov.mineneriga.jbpm.orfeo.OrfeoDocument> documentos) {
+		this.responseCode = responseCode;
+		this.responseMessage = responseMessage;
+		this.expediente = expediente;
+		this.documentos = documentos;
+	}
 
 }
