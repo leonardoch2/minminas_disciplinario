@@ -1,5 +1,5 @@
 <kmodule xmlns="http://www.drools.org/xsd/kmodule" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <kbase name="orfeoBase" default="true" eventProcessingMode="stream" equalsBehavior="identity" packages="*">
-    <ksession name="orfeoSession" type="stateless" default="true" clockType="realtime"/>
+  <kbase name="orfeoBase" default="false" eventProcessingMode="stream" equalsBehavior="identity" packages="*">
+    <ksession name="orfeoSession" type="stateful" default="false" clockType="realtime"/>
   </kbase>
 </kmodule>
