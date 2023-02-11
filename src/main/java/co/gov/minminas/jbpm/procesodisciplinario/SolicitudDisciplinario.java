@@ -6,12 +6,39 @@ package co.gov.minminas.jbpm.procesodisciplinario;
 
 public class SolicitudDisciplinario implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public SolicitudDisciplinario() {
-    }
+	@org.kie.api.definition.type.Label(value = "Datos del solicitante")
+	private co.gov.minminas.jbpm.procesodisciplinario.Persona solicitante;
+	@org.kie.api.definition.type.Label(value = "Radicado Solicitud Quejoso")
+	private java.lang.String numeroRadicadoSolicitud;
 
+	public SolicitudDisciplinario() {
+	}
 
+	public co.gov.minminas.jbpm.procesodisciplinario.Persona getSolicitante() {
+		return this.solicitante;
+	}
 
+	public void setSolicitante(
+			co.gov.minminas.jbpm.procesodisciplinario.Persona solicitante) {
+		this.solicitante = solicitante;
+	}
+
+	public java.lang.String getNumeroRadicadoSolicitud() {
+		return this.numeroRadicadoSolicitud;
+	}
+
+	public void setNumeroRadicadoSolicitud(
+			java.lang.String numeroRadicadoSolicitud) {
+		this.numeroRadicadoSolicitud = numeroRadicadoSolicitud;
+	}
+
+	public SolicitudDisciplinario(
+			co.gov.minminas.jbpm.procesodisciplinario.Persona solicitante,
+			java.lang.String numeroRadicadoSolicitud) {
+		this.solicitante = solicitante;
+		this.numeroRadicadoSolicitud = numeroRadicadoSolicitud;
+	}
 
 }
