@@ -1,4 +1,4 @@
-package co.gov.minminas.jbpm.procesodisciplinario;
+package co.gov.minenergia.jbpm.data;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
