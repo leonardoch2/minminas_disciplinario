@@ -9,7 +9,7 @@ public class SolicitudDisciplinario implements java.io.Serializable {
 	static final long serialVersionUID = 1L;
 
 	@org.kie.api.definition.type.Label(value = "Datos del solicitante")
-	private co.gov.minminas.jbpm.procesodisciplinario.Persona solicitante;
+	private co.gov.minenergia.jbpm.data.Persona solicitante;
 	@org.kie.api.definition.type.Label(value = "Radicado Solicitud Quejoso")
 	private java.lang.String numeroRadicadoSolicitud;
 
