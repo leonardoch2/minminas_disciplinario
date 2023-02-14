@@ -11,28 +11,37 @@ public class DocumentoConfig implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	@org.kie.api.definition.type.Label(value = "Codigo Tipo Documental")
+	@org.kie.api.definition.type.Label("Codigo Tipo Documental")
 	private java.lang.String tipoDocCodigo;
-	@org.kie.api.definition.type.Label(value = "Nombre Tipo Documental")
+	@org.kie.api.definition.type.Label("Nombre Tipo Documental")
 	private java.lang.String tipoDocNombre;
-	@org.kie.api.definition.type.Label(value = "Incluir Radicados?")
+	@org.kie.api.definition.type.Label("Incluir Radicados?")
 	private java.lang.Boolean incluirRadicados;
-	@org.kie.api.definition.type.Label(value = "Incluir Anexos?")
+	@org.kie.api.definition.type.Label("Incluir Anexos?")
 	private java.lang.Boolean incluirAnexos;
-	@org.kie.api.definition.type.Label(value = "Anexo a Expediente?")
+	@org.kie.api.definition.type.Label("Anexo a Expediente?")
 	private java.lang.Boolean anexoExpediente;
-	@org.kie.api.definition.type.Label(value = "Es una comunicacion de entrada?")
+	@org.kie.api.definition.type.Label("Es una comunicacion de entrada?")
 	private java.lang.Boolean esComunicacionEntrada;
-	@org.kie.api.definition.type.Label(value = "Es una comunicación de salida?")
+	@org.kie.api.definition.type.Label("Es una comunicación de salida?")
 	private java.lang.Boolean esComunicacionSalida;
-	@org.kie.api.definition.type.Label(value = "Es una comunicación interna?")
+	@org.kie.api.definition.type.Label("Es una comunicación interna?")
 	private java.lang.Boolean esComunicacionInterna;
-	@org.kie.api.definition.type.Label(value = "Es una resolución?")
+	@org.kie.api.definition.type.Label("Es una resolución?")
 	private java.lang.Boolean esResolucion;
-	@org.kie.api.definition.type.Label(value = "Es un auto?")
+	@org.kie.api.definition.type.Label("Es un auto?")
 	private java.lang.Boolean esAuto;
-	@org.kie.api.definition.type.Label(value = "Es un acta?")
+	@org.kie.api.definition.type.Label("Es un acta?")
 	private java.lang.Boolean esActa;
+
+	@org.kie.api.definition.type.Label(value = "Serie Documental")
+	private java.lang.String serieDoc;
+
+	@org.kie.api.definition.type.Label(value = "Subserie Documental")
+	private java.lang.String subSerieDoc;
+
+	@org.kie.api.definition.type.Label(value = "Tipo Documental")
+	private java.lang.String trdDoc;
 
 	public DocumentoConfig() {
 	}
@@ -125,6 +134,37 @@ public class DocumentoConfig implements java.io.Serializable {
 		this.esActa = esActa;
 	}
 
+	@Override
+	public String toString() {
+
+		Gson gson = new GsonBuilder().setPrettyPrinting().create();
+		return gson.toJson(this);
+	}
+
+	public java.lang.String getSerieDoc() {
+		return this.serieDoc;
+	}
+
+	public void setSerieDoc(java.lang.String serieDoc) {
+		this.serieDoc = serieDoc;
+	}
+
+	public java.lang.String getSubSerieDoc() {
+		return this.subserieDoc;
+	}
+
+	public void setSubSerieDoc(java.lang.String subSerieDoc) {
+		this.subSerieDoc = subSerieDoc;
+	}
+
+	public java.lang.String getTrdDoc() {
+		return this.trdDoc;
+	}
+
+	public void setTrdDoc(java.lang.String trdDoc) {
+		this.trdDoc = trdDoc;
+	}
+
 	public DocumentoConfig(java.lang.String tipoDocCodigo,
 			java.lang.String tipoDocNombre, java.lang.Boolean incluirRadicados,
 			java.lang.Boolean incluirAnexos, java.lang.Boolean anexoExpediente,
@@ -132,7 +172,8 @@ public class DocumentoConfig implements java.io.Serializable {
 			java.lang.Boolean esComunicacionSalida,
 			java.lang.Boolean esComunicacionInterna,
 			java.lang.Boolean esResolucion, java.lang.Boolean esAuto,
-			java.lang.Boolean esActa) {
+			java.lang.Boolean esActa, java.lang.String serieDoc,
+			java.lang.String subSerieDoc, java.lang.String trdDoc) {
 		this.tipoDocCodigo = tipoDocCodigo;
 		this.tipoDocNombre = tipoDocNombre;
 		this.incluirRadicados = incluirRadicados;
@@ -144,13 +185,9 @@ public class DocumentoConfig implements java.io.Serializable {
 		this.esResolucion = esResolucion;
 		this.esAuto = esAuto;
 		this.esActa = esActa;
-	}
-	
-	@Override
-	public String toString() {
-		
-		Gson gson = new GsonBuilder().setPrettyPrinting().create();
-		return gson.toJson(this);
+		this.serieDoc = serieDoc;
+		this.subSerieDoc = subSerieDoc;
+		this.trdDoc = trdDoc;
 	}
 
 }
