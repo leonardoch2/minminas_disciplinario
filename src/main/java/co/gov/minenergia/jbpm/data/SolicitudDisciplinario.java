@@ -21,7 +21,7 @@ public class SolicitudDisciplinario implements java.io.Serializable {
 	}
 
 	public void setSolicitante(
-			co.gov.minminas.jbpm.procesodisciplinario.Persona solicitante) {
+			co.gov.minenergia.jbpm.data.Persona solicitante) {
 		this.solicitante = solicitante;
 	}
 
