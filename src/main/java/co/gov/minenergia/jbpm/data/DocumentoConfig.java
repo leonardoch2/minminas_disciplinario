@@ -150,7 +150,7 @@ public class DocumentoConfig implements java.io.Serializable {
 	}
 
 	public java.lang.String getSubSerieDoc() {
-		return this.subserieDoc;
+		return this.subSerieDoc;
 	}
 
 	public void setSubSerieDoc(java.lang.String subSerieDoc) {
