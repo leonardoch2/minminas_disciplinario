@@ -16,7 +16,7 @@ public class SolicitudDisciplinario implements java.io.Serializable {
 	public SolicitudDisciplinario() {
 	}
 
-	public co.gov.minminas.jbpm.procesodisciplinario.Persona getSolicitante() {
+	public co.gov.minenergia.jbpm.data.Persona getSolicitante() {
 		return this.solicitante;
 	}
 
@@ -35,7 +35,7 @@ public class SolicitudDisciplinario implements java.io.Serializable {
 	}
 
 	public SolicitudDisciplinario(
-			co.gov.minminas.jbpm.procesodisciplinario.Persona solicitante,
+			co.gov.minenergia.jbpm.data.Persona solicitante,
 			java.lang.String numeroRadicadoSolicitud) {
 		this.solicitante = solicitante;
 		this.numeroRadicadoSolicitud = numeroRadicadoSolicitud;
