@@ -6,12 +6,47 @@ package co.gov.minenergia.jbpm.data;
 
 public class DatosTipificacion implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public DatosTipificacion() {
-    }
+	@org.kie.api.definition.type.Label(value = "Codigo Matriz TRD")
+	private java.lang.String SGD_MRD_CODIGO;
+	@org.kie.api.definition.type.Label(value = "Dependencia Tipificadora")
+	private java.lang.String DEPE_CODI;
+	@org.kie.api.definition.type.Label(value = "Usuario Tipificador")
+	private java.lang.String USUA_CODI;
 
+	public DatosTipificacion() {
+	}
 
+	public java.lang.String getSGD_MRD_CODIGO() {
+		return this.SGD_MRD_CODIGO;
+	}
 
+	public void setSGD_MRD_CODIGO(java.lang.String SGD_MRD_CODIGO) {
+		this.SGD_MRD_CODIGO = SGD_MRD_CODIGO;
+	}
+
+	public java.lang.String getDEPE_CODI() {
+		return this.DEPE_CODI;
+	}
+
+	public void setDEPE_CODI(java.lang.String DEPE_CODI) {
+		this.DEPE_CODI = DEPE_CODI;
+	}
+
+	public java.lang.String getUSUA_CODI() {
+		return this.USUA_CODI;
+	}
+
+	public void setUSUA_CODI(java.lang.String USUA_CODI) {
+		this.USUA_CODI = USUA_CODI;
+	}
+
+	public DatosTipificacion(java.lang.String SGD_MRD_CODIGO,
+			java.lang.String DEPE_CODI, java.lang.String USUA_CODI) {
+		this.SGD_MRD_CODIGO = SGD_MRD_CODIGO;
+		this.DEPE_CODI = DEPE_CODI;
+		this.USUA_CODI = USUA_CODI;
+	}
 
 }
