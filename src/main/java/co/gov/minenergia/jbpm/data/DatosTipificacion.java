@@ -1,6 +1,5 @@
 package co.gov.minenergia.jbpm.data;
 
-
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
@@ -12,12 +11,18 @@ public class DatosTipificacion implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	@org.kie.api.definition.type.Label(value = "Codigo Matriz TRD")
+	@org.kie.api.definition.type.Label("Codigo Matriz TRD")
 	private java.lang.String SGD_MRD_CODIGO;
-	@org.kie.api.definition.type.Label(value = "Dependencia Tipificadora")
+	@org.kie.api.definition.type.Label("Dependencia Tipificadora")
 	private java.lang.String DEPE_CODI;
-	@org.kie.api.definition.type.Label(value = "Usuario Tipificador")
+	@org.kie.api.definition.type.Label("Usuario Tipificador")
 	private java.lang.String USUA_CODI;
+
+	private java.lang.String SERIE_CODI;
+
+	private java.lang.String SUBSERIE_CODI;
+
+	private java.lang.String TIPODOC_CODI;
 
 	public DatosTipificacion() {
 	}
@@ -46,20 +51,47 @@ public class DatosTipificacion implements java.io.Serializable {
 		this.USUA_CODI = USUA_CODI;
 	}
 
-	public DatosTipificacion(java.lang.String SGD_MRD_CODIGO,
-			java.lang.String DEPE_CODI, java.lang.String USUA_CODI) {
-		this.SGD_MRD_CODIGO = SGD_MRD_CODIGO;
-		this.DEPE_CODI = DEPE_CODI;
-		this.USUA_CODI = USUA_CODI;
-	}
-	
 	@Override
 	public String toString() {
 
 		Gson gson = new GsonBuilder().setPrettyPrinting().create();
 		return gson.toJson(this);
 	}
-	
-	
+
+	public java.lang.String getSERIE_CODI() {
+		return this.SERIE_CODI;
+	}
+
+	public void setSERIE_CODI(java.lang.String SERIE_CODI) {
+		this.SERIE_CODI = SERIE_CODI;
+	}
+
+	public java.lang.String getSUBSERIE_CODI() {
+		return this.SUBSERIE_CODI;
+	}
+
+	public void setSUBSERIE_CODI(java.lang.String SUBSERIE_CODI) {
+		this.SUBSERIE_CODI = SUBSERIE_CODI;
+	}
+
+	public java.lang.String getTIPODOC_CODI() {
+		return this.TIPODOC_CODI;
+	}
+
+	public void setTIPODOC_CODI(java.lang.String TIPODOC_CODI) {
+		this.TIPODOC_CODI = TIPODOC_CODI;
+	}
+
+	public DatosTipificacion(java.lang.String SGD_MRD_CODIGO,
+			java.lang.String DEPE_CODI, java.lang.String USUA_CODI,
+			java.lang.String SERIE_CODI, java.lang.String SUBSERIE_CODI,
+			java.lang.String TIPODOC_CODI) {
+		this.SGD_MRD_CODIGO = SGD_MRD_CODIGO;
+		this.DEPE_CODI = DEPE_CODI;
+		this.USUA_CODI = USUA_CODI;
+		this.SERIE_CODI = SERIE_CODI;
+		this.SUBSERIE_CODI = SUBSERIE_CODI;
+		this.TIPODOC_CODI = TIPODOC_CODI;
+	}
 
 }
