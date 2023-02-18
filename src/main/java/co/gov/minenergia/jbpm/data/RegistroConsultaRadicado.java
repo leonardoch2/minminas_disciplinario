@@ -6,12 +6,86 @@ package co.gov.minenergia.jbpm.data;
 
 public class RegistroConsultaRadicado implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public RegistroConsultaRadicado() {
-    }
+	private java.lang.String RADICADO;
+	private java.lang.String TIPODOCUMENTO;
+	private java.lang.String USUAACTUAL;
+	private java.lang.String USUARADICADOR;
+	private java.lang.String FECHARADICADO;
+	private java.lang.String DEPENRADICADO;
+	private java.lang.String DEPENACTUAL;
 
+	public RegistroConsultaRadicado() {
+	}
 
+	public java.lang.String getRADICADO() {
+		return this.RADICADO;
+	}
 
+	public void setRADICADO(java.lang.String RADICADO) {
+		this.RADICADO = RADICADO;
+	}
+
+	public java.lang.String getTIPODOCUMENTO() {
+		return this.TIPODOCUMENTO;
+	}
+
+	public void setTIPODOCUMENTO(java.lang.String TIPODOCUMENTO) {
+		this.TIPODOCUMENTO = TIPODOCUMENTO;
+	}
+
+	public java.lang.String getUSUAACTUAL() {
+		return this.USUAACTUAL;
+	}
+
+	public void setUSUAACTUAL(java.lang.String USUAACTUAL) {
+		this.USUAACTUAL = USUAACTUAL;
+	}
+
+	public java.lang.String getUSUARADICADOR() {
+		return this.USUARADICADOR;
+	}
+
+	public void setUSUARADICADOR(java.lang.String USUARADICADOR) {
+		this.USUARADICADOR = USUARADICADOR;
+	}
+
+	public java.lang.String getFECHARADICADO() {
+		return this.FECHARADICADO;
+	}
+
+	public void setFECHARADICADO(java.lang.String FECHARADICADO) {
+		this.FECHARADICADO = FECHARADICADO;
+	}
+
+	public java.lang.String getDEPENRADICADO() {
+		return this.DEPENRADICADO;
+	}
+
+	public void setDEPENRADICADO(java.lang.String DEPENRADICADO) {
+		this.DEPENRADICADO = DEPENRADICADO;
+	}
+
+	public java.lang.String getDEPENACTUAL() {
+		return this.DEPENACTUAL;
+	}
+
+	public void setDEPENACTUAL(java.lang.String DEPENACTUAL) {
+		this.DEPENACTUAL = DEPENACTUAL;
+	}
+
+	public RegistroConsultaRadicado(java.lang.String RADICADO,
+			java.lang.String TIPODOCUMENTO, java.lang.String USUAACTUAL,
+			java.lang.String USUARADICADOR, java.lang.String FECHARADICADO,
+			java.lang.String DEPENRADICADO, java.lang.String DEPENACTUAL) {
+		this.RADICADO = RADICADO;
+		this.TIPODOCUMENTO = TIPODOCUMENTO;
+		this.USUAACTUAL = USUAACTUAL;
+		this.USUARADICADOR = USUARADICADOR;
+		this.FECHARADICADO = FECHARADICADO;
+		this.DEPENRADICADO = DEPENRADICADO;
+		this.DEPENACTUAL = DEPENACTUAL;
+	}
 
 }
