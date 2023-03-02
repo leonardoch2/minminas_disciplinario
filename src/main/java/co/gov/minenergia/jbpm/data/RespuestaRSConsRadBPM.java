@@ -13,7 +13,8 @@ public class RespuestaRSConsRadBPM implements java.io.Serializable {
 	static final long serialVersionUID = 1L;
 
 	private co.gov.minenergia.jbpm.data.RegistroConsultaRadicado registro;
-	private java.util.List<co.gov.minenergia.jbpm.data.DatosTipificacion> trd;
+	//private java.util.List<co.gov.minenergia.jbpm.data.DatosTipificacion> trd;
+	private Boolean trd;
 	private java.lang.String expediente;
 	private java.lang.String message;
 
@@ -29,12 +30,21 @@ public class RespuestaRSConsRadBPM implements java.io.Serializable {
 		this.registro = registro;
 	}
 
-	public java.util.List<co.gov.minenergia.jbpm.data.DatosTipificacion> getTrd() {
+	/*public java.util.List<co.gov.minenergia.jbpm.data.DatosTipificacion> getTrd() {
 		return this.trd;
 	}
 
 	public void setTrd(
 			java.util.List<co.gov.minenergia.jbpm.data.DatosTipificacion> trd) {
+		this.trd = trd;
+	}*/
+	
+	public Boolean getTrd() {
+		return this.trd;
+	}
+
+	public void setTrd(
+			Boolean trd) {
 		this.trd = trd;
 	}
 
@@ -54,9 +64,19 @@ public class RespuestaRSConsRadBPM implements java.io.Serializable {
 		this.message = message;
 	}
 
-	public RespuestaRSConsRadBPM(
+	/*public RespuestaRSConsRadBPM(
 			co.gov.minenergia.jbpm.data.RegistroConsultaRadicado registro,
 			java.util.List<co.gov.minenergia.jbpm.data.DatosTipificacion> trd,
+			java.lang.String expediente, java.lang.String message) {
+		this.registro = registro;
+		this.trd = trd;
+		this.expediente = expediente;
+		this.message = message;
+	}*/
+	
+	public RespuestaRSConsRadBPM(
+			co.gov.minenergia.jbpm.data.RegistroConsultaRadicado registro,
+			Boolean trd,
 			java.lang.String expediente, java.lang.String message) {
 		this.registro = registro;
 		this.trd = trd;
