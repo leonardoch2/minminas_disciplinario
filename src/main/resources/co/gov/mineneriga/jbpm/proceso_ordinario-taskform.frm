@@ -1,0 +1,1 @@
+{"id":"96610899-c728-4644-9deb-7a8a36675ca6","name":"proceso_ordinario-taskform.frm","model":{"taskName":"proceso_ordinario","processId":"ProcesoDisciplinario.ProcesoDisciplinario","properties":[],"formModelType":"org.kie.workbench.common.forms.jbpm.model.authoring.task.TaskFormModel"},"fields":[],"layoutTemplate":{"version":3,"style":"FLUID","layoutProperties":{},"rows":[]}}
