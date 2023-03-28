@@ -18,11 +18,11 @@ public class DatosTipificacion implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("Usuario Tipificador")
 	private java.lang.String USUA_CODI;
 
-	private java.lang.String SERIE_CODI;
+	private java.lang.String SERIE;
 
-	private java.lang.String SUBSERIE_CODI;
+	private java.lang.String SUBSERIE;
 
-	private java.lang.String TIPODOC_CODI;
+	private java.lang.String TIPODOCUMENTAL;
 
 	public DatosTipificacion() {
 	}
@@ -58,28 +58,28 @@ public class DatosTipificacion implements java.io.Serializable {
 		return gson.toJson(this);
 	}
 
-	public java.lang.String getSERIE_CODI() {
-		return this.SERIE_CODI;
+	public java.lang.String getSERIE() {
+		return this.SERIE;
 	}
 
-	public void setSERIE_CODI(java.lang.String SERIE_CODI) {
-		this.SERIE_CODI = SERIE_CODI;
+	public void setSERIE(java.lang.String SERIE) {
+		this.SERIE = SERIE;
 	}
 
-	public java.lang.String getSUBSERIE_CODI() {
-		return this.SUBSERIE_CODI;
+	public java.lang.String getSUBSERIE() {
+		return this.SUBSERIE;
 	}
 
-	public void setSUBSERIE_CODI(java.lang.String SUBSERIE_CODI) {
-		this.SUBSERIE_CODI = SUBSERIE_CODI;
+	public void setSUBSERIE(java.lang.String SUBSERIE) {
+		this.SUBSERIE = SUBSERIE;
 	}
 
-	public java.lang.String getTIPODOC_CODI() {
-		return this.TIPODOC_CODI;
+	public java.lang.String getTIPODOCUMENTAL() {
+		return this.TIPODOCUMENTAL;
 	}
 
-	public void setTIPODOC_CODI(java.lang.String TIPODOC_CODI) {
-		this.TIPODOC_CODI = TIPODOC_CODI;
+	public void setTIPODOCUMENTAL(java.lang.String TIPODOCUMENTAL) {
+		this.TIPODOCUMENTAL = TIPODOCUMENTAL;
 	}
 
 	public DatosTipificacion(java.lang.String SGD_MRD_CODIGO,
@@ -89,9 +89,9 @@ public class DatosTipificacion implements java.io.Serializable {
 		this.SGD_MRD_CODIGO = SGD_MRD_CODIGO;
 		this.DEPE_CODI = DEPE_CODI;
 		this.USUA_CODI = USUA_CODI;
-		this.SERIE_CODI = SERIE_CODI;
-		this.SUBSERIE_CODI = SUBSERIE_CODI;
-		this.TIPODOC_CODI = TIPODOC_CODI;
+		this.SERIE = SERIE_CODI;
+		this.SUBSERIE = SUBSERIE_CODI;
+		this.TIPODOCUMENTAL = TIPODOC_CODI;
 	}
 
 }
