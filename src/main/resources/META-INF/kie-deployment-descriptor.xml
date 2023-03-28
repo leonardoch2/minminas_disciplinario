@@ -51,6 +51,12 @@
             <parameters/>
             <name>orfeoJbpmUser</name>
         </global>
+        <global>
+            <resolver>mvel</resolver>
+            <identifier>{"dependenciaAsuntosDisciplinarios":900,"dependenciaAbogadoAsignado":900,"dependenciaOficinaJuridica":900}</identifier>
+            <parameters/>
+            <name>parametrosConfigProceso</name>
+        </global>
     </globals>
     <work-item-handlers>
         <work-item-handler>
