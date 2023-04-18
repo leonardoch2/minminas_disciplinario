@@ -53,7 +53,7 @@
         </global>
         <global>
             <resolver>mvel</resolver>
-            <identifier>'{"dependenciaAsuntosDisciplinarios":"900","dependenciaAbogadoAsignado":"900","dependenciaOficinaJuridica":"900","rolAsuntosDisciplinarios":"profesionalAsuntosDisciplinarios","rolAbogadoAsignado":"abogadoAsignado","rolOficinaJuridica":"profesionalOficinaJuridica","rolDespachoMinisterio":"profesionalDespachoMinisterio"}'</identifier>
+            <identifier>'{"dependenciaAsuntosDisciplinarios":"900","dependenciaAbogadoAsignado":"900","dependenciaOficinaJuridica":"900","dependenciaDespachoMinisterio":"900","rolAsuntosDisciplinarios":"profesionalAsuntosDisciplinarios","rolAbogadoAsignado":"abogadoAsignado","rolOficinaJuridica":"profesionalOficinaJuridica","rolDespachoMinisterio":"profesionalDespachoMinisterio"}'</identifier>
             <parameters/>
             <name>parametrosConfigProceso</name>
         </global>
