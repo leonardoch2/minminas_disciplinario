@@ -1,6 +1,5 @@
 package co.gov.minenergia.jbpm.data;
 
-
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
@@ -14,9 +13,11 @@ public class RespuestaRSConsRadBPM implements java.io.Serializable {
 
 	private co.gov.minenergia.jbpm.data.RegistroConsultaRadicado registro;
 	private java.util.List<co.gov.minenergia.jbpm.data.DatosTipificacion> trd;
-	//private Boolean trd;
+	// private Boolean trd;
 	private java.lang.String expediente;
 	private java.lang.String message;
+
+	private java.lang.String metadatos;
 
 	public RespuestaRSConsRadBPM() {
 	}
@@ -38,15 +39,12 @@ public class RespuestaRSConsRadBPM implements java.io.Serializable {
 			java.util.List<co.gov.minenergia.jbpm.data.DatosTipificacion> trd) {
 		this.trd = trd;
 	}
-	
-	/*public Boolean getTrd() {
-		return this.trd;
-	}
 
-	public void setTrd(
-			Boolean trd) {
-		this.trd = trd;
-	}*/
+	/*
+	 * public Boolean getTrd() { return this.trd; }
+	 * 
+	 * public void setTrd( Boolean trd) { this.trd = trd; }
+	 */
 
 	public java.lang.String getExpediente() {
 		return this.expediente;
@@ -64,31 +62,39 @@ public class RespuestaRSConsRadBPM implements java.io.Serializable {
 		this.message = message;
 	}
 
-	public RespuestaRSConsRadBPM(
-			co.gov.minenergia.jbpm.data.RegistroConsultaRadicado registro,
-			java.util.List<co.gov.minenergia.jbpm.data.DatosTipificacion> trd,
-			java.lang.String expediente, java.lang.String message) {
-		this.registro = registro;
-		this.trd = trd;
-		this.expediente = expediente;
-		this.message = message;
-	}
-	
-	/*public RespuestaRSConsRadBPM(
-			co.gov.minenergia.jbpm.data.RegistroConsultaRadicado registro,
-			Boolean trd,
-			java.lang.String expediente, java.lang.String message) {
-		this.registro = registro;
-		this.trd = trd;
-		this.expediente = expediente;
-		this.message = message;
-	}*/
-	
+	/*
+	 * public RespuestaRSConsRadBPM(
+	 * co.gov.minenergia.jbpm.data.RegistroConsultaRadicado registro, Boolean
+	 * trd, java.lang.String expediente, java.lang.String message) {
+	 * this.registro = registro; this.trd = trd; this.expediente = expediente;
+	 * this.message = message; }
+	 */
+
 	@Override
 	public String toString() {
 
 		Gson gson = new GsonBuilder().setPrettyPrinting().create();
 		return gson.toJson(this);
+	}
+
+	public java.lang.String getMetadatos() {
+		return this.metadatos;
+	}
+
+	public void setMetadatos(java.lang.String metadatos) {
+		this.metadatos = metadatos;
+	}
+
+	public RespuestaRSConsRadBPM(
+			co.gov.minenergia.jbpm.data.RegistroConsultaRadicado registro,
+			java.util.List<co.gov.minenergia.jbpm.data.DatosTipificacion> trd,
+			java.lang.String expediente, java.lang.String message,
+			java.lang.String metadatos) {
+		this.registro = registro;
+		this.trd = trd;
+		this.expediente = expediente;
+		this.message = message;
+		this.metadatos = metadatos;
 	}
 
 }
