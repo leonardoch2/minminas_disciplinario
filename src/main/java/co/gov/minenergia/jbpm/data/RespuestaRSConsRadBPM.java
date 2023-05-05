@@ -17,7 +17,7 @@ public class RespuestaRSConsRadBPM implements java.io.Serializable {
 	private java.lang.String expediente;
 	private java.lang.String message;
 
-	private java.lang.String metadatos;
+	private java.lang.Object metadatos;
 
 	public RespuestaRSConsRadBPM() {
 	}
@@ -77,11 +77,11 @@ public class RespuestaRSConsRadBPM implements java.io.Serializable {
 		return gson.toJson(this);
 	}
 
-	public java.lang.String getMetadatos() {
+	public java.lang.Object getMetadatos() {
 		return this.metadatos;
 	}
 
-	public void setMetadatos(java.lang.String metadatos) {
+	public void setMetadatos(java.lang.Object metadatos) {
 		this.metadatos = metadatos;
 	}
 
